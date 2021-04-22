@@ -111,6 +111,10 @@ function openSettings() {
   return RNBluetoothStateManager.openSettings();
 }
 
+function getPairedDevices() {
+  return RNBluetoothStateManager.getPairedDevices();
+}
+
 const BluetoothStateManager = {
   EVENT_BLUETOOTH_STATE_CHANGE: RNBluetoothStateManager.EVENT_BLUETOOTH_STATE_CHANGE,
   getState,
@@ -119,6 +123,7 @@ const BluetoothStateManager = {
   enable,
   disable,
   requestToEnable,
+  getPairedDevices,
   openSettings,
 };
 
